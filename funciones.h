@@ -2,6 +2,9 @@ int menu();
 void leerCadena(char *cadena, int n);
 int validarEnteroConRango(int a, int b);
 float validarFloatConRango(float a, float b);
+void pedirNombre(char *destino, char *mensaje);
+float leerTiempo();
+void imprimirDatosProducto(float *tiempos, float *recursos, int *cantidades, int indice, int conTotales);
 void registrarProducto(char nombres[][50], float *tiempos, float *recursos, int *cantidades, int *cont);
 void verProductos(char nombres[][50], float *tiempos, float *recursos, int *cantidades, int *cont);
 int buscarIndice(char nombres[][50], int *cont, char *nombre);
@@ -10,4 +13,3 @@ void editarProducto(char nombres[][50], float *tiempos, float *recursos, int *ca
 void eliminarProducto(char nombres[][50], float *tiempos, float *recursos, int *cantidades, int *cont);
 void calcularTotales(float *tiempos, float *recursos, int *cantidades, int *cont, float *tiempoTotal, float *recursosTotal);
 void verificarFactibilidad(float *tiempos, float *recursos, int *cantidades, int *cont);
-
